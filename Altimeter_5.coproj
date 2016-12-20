@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.7" name="Altimeter_5">
+  <Target name="Altimeter_5" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="305" chipName="STM32F103C8" boardId="64" boardName="STM32F103C8T6 Core Development Board"/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="SupportCPlusplus" value="0"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F103C8"/>
+          <Define name="STM32F10X_MD"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Not use C Library"/>
+        <Option name="UserEditLinker" value="-lm; "/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00010000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00005000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="../../configuration/programdata/altimeter_5/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="Altimeter_5"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F10x_MD_64.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./"/>
+  <Files>
+    <File name="_BMP180/BMP180.c" path="_BMP180/BMP180.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_cal.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_cal.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_mem.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_mem.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_mem.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_mem.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/otgd_fs_dev.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/otgd_fs_dev.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_tim.h" path="stm_lib/inc/stm32f10x_tim.h" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="_HW_CONFIG/hw_config.h" path="_HW_CONFIG/hw_config.h" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/src/usb_prop.c" path="usb_vcp_libs/usb_lib/src/usb_prop.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_tim.c" path="stm_lib/src/stm32f10x_tim.c" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_int.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_int.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_type.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_type.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_lib.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_lib.h" type="1"/>
+    <File name="_ST7735" path="" type="2"/>
+    <File name="usb_vcp_libs" path="" type="2"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="_HW_CONFIG/I2C.h" path="_HW_CONFIG/I2C.h" type="1"/>
+    <File name="stm_lib/src/misc.c" path="stm_lib/src/misc.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_spi.c" path="stm_lib/src/stm32f10x_spi.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_dev.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_dev.h" type="1"/>
+    <File name="cmsis_boot/stm32f10x.h" path="cmsis_boot/stm32f10x.h" type="1"/>
+    <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/otgd_fs_int.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/otgd_fs_int.c" type="1"/>
+    <File name="_ST7735/DefaultFonts.c" path="_ST7735/DefaultFonts.c" type="1"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="_ST7735/ST7735.h" path="_ST7735/ST7735.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_spi.h" path="stm_lib/inc/stm32f10x_spi.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc" path="" type="2"/>
+    <File name="usb_vcp_libs/usb_lib/src/usb_pwr.c" path="usb_vcp_libs/usb_lib/src/usb_pwr.c" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/src" path="" type="2"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_regs.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_regs.c" type="1"/>
+    <File name="_BMP180" path="" type="2"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_init.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_init.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_pcd.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_pcd.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_sil.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_sil.c" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/src/usb_endp.c" path="usb_vcp_libs/usb_lib/src/usb_endp.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_core.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_core.c" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/inc/usb_istr.h" path="usb_vcp_libs/usb_lib/inc/usb_istr.h" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/inc/usb_conf.h" path="usb_vcp_libs/usb_lib/inc/usb_conf.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/Release_Notes.html" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/Release_Notes.html" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f10x_md.c" path="cmsis_boot/startup/startup_stm32f10x_md.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src" path="" type="2"/>
+    <File name="stm_lib/src/stm32f10x_gpio.c" path="stm_lib/src/stm32f10x_gpio.c" type="1"/>
+    <File name="_BMP180/BMP180.h" path="_BMP180/BMP180.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_gpio.h" path="stm_lib/inc/stm32f10x_gpio.h" type="1"/>
+    <File name="_HW_CONFIG" path="" type="2"/>
+    <File name="cmsis_boot/system_stm32f10x.c" path="cmsis_boot/system_stm32f10x.c" type="1"/>
+    <File name="stm_lib/inc/misc.h" path="stm_lib/inc/misc.h" type="1"/>
+    <File name="_HW_CONFIG/I2C.c" path="_HW_CONFIG/I2C.c" type="1"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
+    <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/inc/usb_pwr.h" path="usb_vcp_libs/usb_lib/inc/usb_pwr.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_init.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/usb_init.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/otgd_fs_cal.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/otgd_fs_cal.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_regs.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_regs.h" type="1"/>
+    <File name="stm_lib/src/stm32f10x_rcc.c" path="stm_lib/src/stm32f10x_rcc.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_int.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_int.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_def.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_def.h" type="1"/>
+    <File name="_HW_CONFIG/hw_config.c" path="_HW_CONFIG/hw_config.c" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/src/usb_istr.c" path="usb_vcp_libs/usb_lib/src/usb_istr.c" type="1"/>
+    <File name="stm_lib/src" path="" type="2"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_regs.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_regs.h" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/src/usb_desc.c" path="usb_vcp_libs/usb_lib/src/usb_desc.c" type="1"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="usb_vcp_libs/usb_lib" path="" type="2"/>
+    <File name="stm_lib" path="" type="2"/>
+    <File name="cmsis_boot/system_stm32f10x.h" path="cmsis_boot/system_stm32f10x.h" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/inc/usb_prop.h" path="usb_vcp_libs/usb_lib/inc/usb_prop.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_core.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_core.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_rcc.h" path="stm_lib/inc/stm32f10x_rcc.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_i2c.h" path="stm_lib/inc/stm32f10x_i2c.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver" path="" type="2"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="_ST7735/ST7735.c" path="_ST7735/ST7735.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_int.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/otgd_fs_int.h" type="1"/>
+    <File name="stm_lib/src/stm32f10x_i2c.c" path="stm_lib/src/stm32f10x_i2c.c" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/inc" path="" type="2"/>
+    <File name="_ST7735/DefaultFonts.h" path="_ST7735/DefaultFonts.h" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/otgd_fs_pcd.c" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/src/otgd_fs_pcd.c" type="1"/>
+    <File name="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_sil.h" path="usb_vcp_libs/STM32_USB-FS-Device_Driver/inc/usb_sil.h" type="1"/>
+    <File name="usb_vcp_libs/usb_lib/inc/usb_desc.h" path="usb_vcp_libs/usb_lib/inc/usb_desc.h" type="1"/>
+    <File name="stm_lib/inc" path="" type="2"/>
+    <File name="main.c" path="main.c" type="1"/>
+  </Files>
+</Project>

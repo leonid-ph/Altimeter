@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -I..\..\..\workspace\Altimeter_5\stm_lib\inc -I..\..\..\workspace\Altimeter_5\usb_vcp_libs -I..\..\..\workspace\Altimeter_5\_HW_CONFIG -I..\..\..\workspace\Altimeter_5\cmsis_boot -I..\..\..\workspace\Altimeter_5\usb_vcp_libs\usb_lib\inc -I..\..\..\workspace\Altimeter_5\_ST7735 -I..\..\..\workspace\Altimeter_5\usb_vcp_libs\usb_lib -I..\..\..\workspace\Altimeter_5\cmsis -I..\..\..\workspace\Altimeter_5 -I..\..\..\workspace -I..\..\..\workspace\Altimeter_5\usb_vcp_libs\STM32_USB-FS-Device_Driver -I..\..\..\workspace\Altimeter_5\usb_vcp_libs\STM32_USB-FS-Device_Driver\inc -I..\..\..\workspace\Altimeter_5\_BMP180 -I..\..\..\workspace\Altimeter_5\stm_lib">
+      <target file="hw_config.o" lastModified="15904574720">
+         <source file="..\..\..\_HW_CONFIG\hw_config.c" lastModified="15903388ec8"/>
+      </target>
+      <target file="stm32f10x_spi.o" lastModified="159045757ce">
+         <source file="..\..\..\stm_lib\src\stm32f10x_spi.c" lastModified="1568ef64550"/>
+      </target>
+      <target file="usb_sil.o" lastModified="15904575238">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\usb_sil.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="usb_int.o" lastModified="15904574130">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\usb_int.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="15904574f90">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1568ef639f0"/>
+      </target>
+      <target file="stm32f10x_i2c.o" lastModified="159045758e6">
+         <source file="..\..\..\stm_lib\src\stm32f10x_i2c.c" lastModified="1568ef6504a"/>
+      </target>
+      <target file="misc.o" lastModified="159045756ca">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="1568ef66335"/>
+      </target>
+      <target file="usb_mem.o" lastModified="159045759d6">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\usb_mem.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="usb_endp.o" lastModified="159045755e4">
+         <source file="..\..\..\usb_vcp_libs\usb_lib\src\usb_endp.c" lastModified="1590311e663"/>
+      </target>
+      <target file="otgd_fs_dev.o" lastModified="15904574e78">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\otgd_fs_dev.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="usb_istr.o" lastModified="15904575abc">
+         <source file="..\..\..\usb_vcp_libs\usb_lib\src\usb_istr.c" lastModified="135380d05c0"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="159045745fe">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="1568ef639a0"/>
+      </target>
+      <target file="otgd_fs_pcd.o" lastModified="15904573d84">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\otgd_fs_pcd.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="usb_regs.o" lastModified="1590457443c">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\usb_regs.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="BMP180.o" lastModified="1590457533c">
+         <source file="..\..\..\_BMP180\BMP180.c" lastModified="15903ade45c"/>
+      </target>
+      <target file="otgd_fs_cal.o" lastModified="159045754f4">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\otgd_fs_cal.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="usb_pwr.o" lastModified="15904574b8a">
+         <source file="..\..\..\usb_vcp_libs\usb_lib\src\usb_pwr.c" lastModified="1590251ff6a"/>
+      </target>
+      <target file="ST7735.o" lastModified="15904574a90">
+         <source file="..\..\..\_ST7735\ST7735.c" lastModified="159032ee710"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="15904574824">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1568ef6398c"/>
+      </target>
+      <target file="DefaultFonts.o" lastModified="1590457452c">
+         <source file="..\..\..\_ST7735\DefaultFonts.c" lastModified="156e6ee2859"/>
+      </target>
+      <target file="otgd_fs_int.o" lastModified="15904575148">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\otgd_fs_int.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="usb_core.o" lastModified="15904573eba">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\usb_core.c" lastModified="12ecd641660"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="15904574216">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1568ef639b4"/>
+      </target>
+      <target file="usb_desc.o" lastModified="159045742fc">
+         <source file="..\..\..\usb_vcp_libs\usb_lib\src\usb_desc.c" lastModified="12ecd64e950"/>
+      </target>
+      <target file="syscalls.o" lastModified="1590457542c">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="1568ef6245f"/>
+      </target>
+      <target file="usb_init.o" lastModified="15904574c70">
+         <source file="..\..\..\usb_vcp_libs\STM32_USB-FS-Device_Driver\src\usb_init.c" lastModified="15903322f0d"/>
+      </target>
+      <target file="stm32f10x_tim.o" lastModified="15904574036">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="1568f2b4044"/>
+      </target>
+      <target file="I2C.o" lastModified="15904575080">
+         <source file="..\..\..\_HW_CONFIG\I2C.c" lastModified="158f8a43771"/>
+      </target>
+      <target file="usb_prop.o" lastModified="15904574928">
+         <source file="..\..\..\usb_vcp_libs\usb_lib\src\usb_prop.c" lastModified="1590251ff88"/>
+      </target>
+      <target file="main.o" lastModified="15904574dab">
+         <source file="..\..\..\main.c" lastModified="15904573a1e"/>
+      </target>
+   </processor>
+</history>

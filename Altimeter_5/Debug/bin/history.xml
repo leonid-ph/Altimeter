@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Altimeter_5.map -O0 --gc-sections -lm -LD:\CooCox\CoIDE\configuration\ProgramData\Altimeter_5 -TD:\CooCox\CoIDE\configuration\ProgramData\Altimeter_5/arm-gcc-link.ld -g">
+      <target file="Altimeter_5.elf" lastModified="15904575dbe">
+         <source file="..\obj\otgd_fs_pcd.o" lastModified="15904573d84"/>
+         <source file="..\obj\usb_core.o" lastModified="15904573eba"/>
+         <source file="..\obj\stm32f10x_tim.o" lastModified="15904574036"/>
+         <source file="..\obj\usb_int.o" lastModified="15904574130"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="15904574216"/>
+         <source file="..\obj\usb_desc.o" lastModified="159045742fc"/>
+         <source file="..\obj\usb_regs.o" lastModified="1590457443c"/>
+         <source file="..\obj\DefaultFonts.o" lastModified="1590457452c"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="159045745fe"/>
+         <source file="..\obj\hw_config.o" lastModified="15904574720"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="15904574824"/>
+         <source file="..\obj\usb_prop.o" lastModified="15904574928"/>
+         <source file="..\obj\ST7735.o" lastModified="15904574a90"/>
+         <source file="..\obj\usb_pwr.o" lastModified="15904574b8a"/>
+         <source file="..\obj\usb_init.o" lastModified="15904574c70"/>
+         <source file="..\obj\main.o" lastModified="15904574dab"/>
+         <source file="..\obj\otgd_fs_dev.o" lastModified="15904574e78"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="15904574f90"/>
+         <source file="..\obj\I2C.o" lastModified="15904575080"/>
+         <source file="..\obj\otgd_fs_int.o" lastModified="15904575148"/>
+         <source file="..\obj\usb_sil.o" lastModified="15904575238"/>
+         <source file="..\obj\BMP180.o" lastModified="1590457533c"/>
+         <source file="..\obj\syscalls.o" lastModified="1590457542c"/>
+         <source file="..\obj\otgd_fs_cal.o" lastModified="159045754f4"/>
+         <source file="..\obj\usb_endp.o" lastModified="159045755e4"/>
+         <source file="..\obj\misc.o" lastModified="159045756ca"/>
+         <source file="..\obj\stm32f10x_spi.o" lastModified="159045757ce"/>
+         <source file="..\obj\stm32f10x_i2c.o" lastModified="159045758e6"/>
+         <source file="..\obj\usb_mem.o" lastModified="159045759d6"/>
+         <source file="..\obj\usb_istr.o" lastModified="15904575abc"/>
+      </target>
+   </processor>
+</history>
